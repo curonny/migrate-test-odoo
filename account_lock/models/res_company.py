@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 
 import calendar
 from dateutil.relativedelta import relativedelta
