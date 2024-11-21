@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from odoo import api, fields, models, _
 from odoo.osv import expression
 from odoo.exceptions import UserError, ValidationError
@@ -636,10 +637,10 @@ class AccountJournal(models.Model):
                 self.alias_id.sudo().write(alias_values)
             else:
                 alias_values["alias_model_id"] = (
-                    self.env["ir.model"].sudo()._get("account.move").id
+                    self.env["ir.model"]._get("account.move").id
                 )
                 alias_values["alias_parent_model_id"] = (
-                    self.env["ir.model"].sudo()._get("account.journal").id
+                    self.env["ir.model"]._get("account.journal").id
                 )
                 self.alias_id = self.env["mail.alias"].sudo().create(alias_values)
         elif self.alias_id:
