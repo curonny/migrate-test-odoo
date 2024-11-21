@@ -2,11 +2,11 @@ import logging
 
 from odoo.addons.account.models.chart_template import update_taxes_from_templates
 from odoo.tests import tagged
-from odoo.tests.common import TransactionCase
+from odoo.tests.common import SavepointCase
 
 
 @tagged("post_install", "-at_install")
-class TestChartTemplate(TransactionCase):
+class TestChartTemplate(SavepointCase):
     @classmethod
     def setUpClass(cls):
         """Set up a company with the generic chart template, containing two taxes and a fiscal position.
