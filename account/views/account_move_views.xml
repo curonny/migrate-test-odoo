@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
   <data>
     <!-- VIEWS -->
@@ -537,10 +538,14 @@
             <field name="tax_lock_date_message" nolabel="1"/>
           </div>
           <div groups="account.group_account_invoice,account.group_account_readonly" class="alert alert-info" role="alert" style="margin-bottom:0px;" attrs="{'invisible': ['|', '|', ('move_type', 'not in', ('out_invoice', 'out_refund')), ('invoice_has_outstanding', '=', False), ('payment_state', 'not in', ('not_paid', 'partial'))]}">
-                        You have <bold><a class="alert-link" href="#outstanding" role="button">outstanding payments</a></bold> for this customer. You can allocate them to mark this invoice as paid.
+                        You have <bold>
+              <a class="alert-link" href="#outstanding" role="button">outstanding payments</a>
+            </bold> for this customer. You can allocate them to mark this invoice as paid.
                     </div>
           <div groups="account.group_account_invoice,account.group_account_readonly" class="alert alert-info" role="alert" style="margin-bottom:0px;" attrs="{'invisible': ['|', '|', ('move_type', 'not in', ('in_invoice', 'in_refund')), ('invoice_has_outstanding', '=', False), ('payment_state', 'not in', ('not_paid', 'partial'))]}">
-                        You have <bold><a class="alert-link" href="#outstanding" role="button">outstanding debits</a></bold> for this vendor. You can allocate them to mark this bill as paid.
+                        You have <bold>
+              <a class="alert-link" href="#outstanding" role="button">outstanding debits</a>
+            </bold> for this vendor. You can allocate them to mark this bill as paid.
                     </div>
           <div class="alert alert-info" role="alert" style="margin-bottom:0px;" attrs="{'invisible': ['|', ('state', '!=', 'draft'), ('auto_post', '=', False)]}">
                         This move is configured to be posted automatically at the accounting date: <field name="date" readonly="1"/>.
@@ -704,12 +709,12 @@
                                 <div class="text-muted">
                                                                     Quantity:
                                                                     <t t-out="record.quantity.value"/>
-                                                                    <t t-out="record.product_uom_id.value"/>
-                                                                </div>
+                                  <t t-out="record.product_uom_id.value"/>
+                                </div>
                                 <div class="text-muted">
                                                                     Unit Price:
                                                                     <t t-out="record.price_unit.value"/>
-                                                                </div>
+                                </div>
                                 <strong>
                                   <span class="float-right text-right">
                                     <t groups="account.group_show_line_subtotals_tax_excluded" t-out="record.price_subtotal.value"/>
