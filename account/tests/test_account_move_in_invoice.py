@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from freezegun import freeze_time
 
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
@@ -133,7 +132,7 @@ class TestAccountMoveInInvoiceOnchanges(AccountTestInvoicingCommon):
             "amount_total": 1128.0,
         }
 
-    def setUp(self):
+    def setUpClass(cls):
         super(TestAccountMoveInInvoiceOnchanges, self).setUp()
         self.assertInvoiceValues(
             self.invoice,

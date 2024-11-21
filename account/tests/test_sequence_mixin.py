@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 from odoo.tests import tagged
 from odoo.tests.common import Form, TransactionCase
@@ -540,7 +539,7 @@ class TestSequenceMixin(AccountTestInvoicingCommon):
 
 @tagged("post_install", "-at_install")
 class TestSequenceMixinConcurrency(TransactionCase):
-    def setUp(self):
+    def setUpClass(cls):
         super().setUp()
         with self.env.registry.cursor() as cr:
             env = api.Environment(cr, SUPERUSER_ID, {})

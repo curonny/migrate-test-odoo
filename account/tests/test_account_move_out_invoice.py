@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 from odoo.tests.common import Form
 from odoo.tests import tagged
@@ -134,7 +133,7 @@ class TestAccountMoveOutInvoiceOnchanges(AccountTestInvoicingCommon):
             "amount_total": 1410.0,
         }
 
-    def setUp(self):
+    def setUpClass(cls):
         super(TestAccountMoveOutInvoiceOnchanges, self).setUp()
         self.assertInvoiceValues(
             self.invoice,
