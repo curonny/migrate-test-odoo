@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 
 from odoo import api, fields, models, _
 from odoo.tools.misc import get_lang

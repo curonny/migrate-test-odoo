@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <odoo>
-<data>
+<data noupdate="0">
     <!--
         There are 4 groups
         The way the groups work is different when `account_accountant` is installed or not.
