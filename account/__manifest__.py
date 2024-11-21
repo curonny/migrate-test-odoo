@@ -1,9 +1,17 @@
+# -*- coding: utf-8 -*-
+# Part of Odoo. See LICENSE file for full copyright and licensing details.
 {
     "name": "Invoicing",
-    "version": "15.0.1.0.0",
+    "version": "1.1",
     "summary": "Invoices & Payments",
     "sequence": 10,
-    "description": "\nInvoicing & Payments\n====================\nThe specific and easy-to-use Invoicing system in Odoo allows you to keep track of your accounting, even when you are not an accountant. It provides an easy way to follow up on your vendors and customers.\n\nYou could use this simplified accounting in case you work with an (external) account to keep your books, and you still want to keep track of payments. This module also offers you an easy method of registering payments, without having to encode complete abstracts of account.\n    ",
+    "description": """
+Invoicing & Payments
+====================
+The specific and easy-to-use Invoicing system in Odoo allows you to keep track of your accounting, even when you are not an accountant. It provides an easy way to follow up on your vendors and customers.
+
+You could use this simplified accounting in case you work with an (external) account to keep your books, and you still want to keep track of payments. This module also offers you an easy method of registering payments, without having to encode complete abstracts of account.
+    """,
     "category": "Accounting/Accounting",
     "website": "https://www.odoo.com/page/billing",
     "images": [
@@ -12,15 +20,9 @@
         "images/cash_register.jpeg",
         "images/chart_of_accounts.jpeg",
         "images/customer_invoice.jpeg",
-        "images/journal_entries.jpeg"
+        "images/journal_entries.jpeg",
     ],
-    "depends": [
-        "base_setup",
-        "product",
-        "analytic",
-        "portal",
-        "digest"
-    ],
+    "depends": ["base_setup", "product", "analytic", "portal", "digest"],
     "data": [
         "security/account_security.xml",
         "security/ir.model.access.csv",
@@ -80,10 +82,10 @@
         "views/res_currency.xml",
         "views/account_menuitem.xml",
         "views/account_analytic_default_view.xml",
-        "wizard/account_tour_upload_bill.xml"
+        "wizard/account_tour_upload_bill.xml",
     ],
     "demo": [
-        "demo/account_demo.xml"
+        "demo/account_demo.xml",
     ],
     "qweb": [
         "static/src/xml/account_payment.xml",
@@ -92,41 +94,11 @@
         "static/src/xml/bills_tree_upload_views.xml",
         "static/src/xml/account_journal_activity.xml",
         "static/src/xml/grouped_view_widget.xml",
-        "static/src/xml/tax_group.xml"
+        "static/src/xml/tax_group.xml",
     ],
     "installable": True,
     "application": True,
     "auto_install": False,
     "post_init_hook": "_account_post_init",
     "license": "LGPL-3",
-    "assets": {
-        "web.assets_backend": [
-            "/account/static/src/css/account_bank_and_cash.css",
-            "/account/static/src/css/account.css",
-            "/account/static/src/css/tax_group.css",
-            "/account/static/src/scss/account_reconciliation.scss",
-            "/account/static/src/scss/account_journal_dashboard.scss",
-            "/account/static/src/scss/account_dashboard.scss",
-            "/account/static/src/scss/account_searchpanel.scss",
-            "/account/static/src/scss/section_and_note_backend.scss",
-            "/account/static/src/scss/account_activity.scss",
-            "/account/static/src/js/account_payment_field.js",
-            "/account/static/src/js/account_resequence_field.js",
-            "/account/static/src/js/grouped_view_widget.js",
-            "/account/static/src/js/mail_activity.js",
-            "/account/static/src/js/tax_group.js",
-            "/account/static/src/js/bank_statement.js",
-            "/account/static/src/js/section_and_note_fields_backend.js",
-            "/account/static/src/js/tours/account.js",
-            "/account/static/src/js/bills_tree_upload.js",
-            "/account/static/src/js/account_selection.js"
-        ],
-        "web.assets_frontend": [
-            "/account/static/src/js/account_portal_sidebar.js"
-        ],
-        "web.assets_tests": [
-            "/account/static/tests/tours/account_dashboard_setup_bar_tests.js",
-            "/account/static/tests/tours/tax_group_tests.js"
-        ]
-    }
 }

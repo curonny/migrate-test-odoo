@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 from datetime import timedelta, datetime, date
 import calendar
 from dateutil.relativedelta import relativedelta
