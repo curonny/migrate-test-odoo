@@ -14,7 +14,7 @@
                     <attribute name="decoration-warning">blocking_level == 'warning'</attribute>
                     <attribute name="decoration-danger">blocking_level == 'error'</attribute>
                 </xpath>
-                
+
             </field>
         </record>
     </data>

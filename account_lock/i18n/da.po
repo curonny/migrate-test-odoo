@@ -1,14 +1,14 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account_lock
-# 
+#
 # Translators:
 # Martin Trigaux, 2020
 # Morten Schou <ms@msteknik.dk>, 2020
 # Jesper Carstensen <jc@danodoo.dk>, 2020
 # Mads Søndergaard, 2020
 # Mads Søndergaard, 2021
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~13.5\n"

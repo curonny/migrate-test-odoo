@@ -244,4 +244,3 @@ msgstr "cheque on bottom"
 #: selection:res.company,account_check_printing_layout:0
 msgid "check on top"
 msgstr "cheque on top"
-

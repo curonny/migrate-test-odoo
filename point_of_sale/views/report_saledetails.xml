@@ -28,7 +28,7 @@
                     <td>
                         <t t-esc="line['quantity']" />
                         <t t-if='line["uom"] != "Units"'>
-                            <t t-esc='line["uom"]' /> 
+                            <t t-esc='line["uom"]' />
                         </t>
                     </td>
                     <td>

@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* point_of_sale
-# 
+#
 # Translators:
 # Goh Gangtai <gangtai.goh@gmail.com>, 2020
 # 경민기 <moonend@gmail.com>, 2020
@@ -15,7 +15,7 @@
 # Daye Jeong, 2023
 # Wil Odoo, 2023
 # Sarah Park, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"

@@ -14,7 +14,7 @@
                             <div class="oe_inline">
                                 <field name="edi_format_ids"
                                         nolabel="1"
-                                        widget="many2many_tags" 
+                                        widget="many2many_tags"
                                         placeholder="You can set default electronic invoicing formats on the journal"/>
                             </div>
                         </group>

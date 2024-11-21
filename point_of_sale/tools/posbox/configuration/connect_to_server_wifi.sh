@@ -35,7 +35,7 @@ function connect () {
 		echo "interface=wlan0" > /root_bypass_ramdisks/etc/hostapd/hostapd.conf
 		echo "ssid=${IOT_NAME}" >> /root_bypass_ramdisks/etc/hostapd/hostapd.conf
 		echo "channel=1" >> /root_bypass_ramdisks/etc/hostapd/hostapd.conf
-		
+
 		sudo hostname "${IOT_NAME}"
 	fi
 	sudo mount -o remount,ro /

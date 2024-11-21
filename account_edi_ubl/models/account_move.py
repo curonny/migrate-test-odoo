@@ -5,7 +5,7 @@ from odoo.tools import float_repr
 
 
 class AccountMove(models.Model):
-    _inherit = 'account.move'
+    _inherit = "account.move"
 
     def _get_ubl_values(self):
         self.ensure_one()
@@ -15,9 +15,9 @@ class AccountMove(models.Model):
             return float_repr(amount, self.currency_id.decimal_places)
 
         return {
-            'invoice': self,
-            'ubl_version': 2.1,
-            'type_code': 380 if self.move_type == 'out_invoice' else 381,
-            'payment_means_code': 42 if self.journal_id.bank_account_id else 31,
-            'format_monetary': format_monetary,
+            "invoice": self,
+            "ubl_version": 2.1,
+            "type_code": 380 if self.move_type == "out_invoice" else 381,
+            "payment_means_code": 42 if self.journal_id.bank_account_id else 31,
+            "format_monetary": format_monetary,
         }

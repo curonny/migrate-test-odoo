@@ -106,4 +106,3 @@ they make buying decisions, in store or online.
 
 With Odoo, you get a 360° customer view, including cross-channel sales,
 interaction history, profiles, and more.
-
