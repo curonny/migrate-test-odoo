@@ -1,4 +1,3 @@
-
 from odoo import api, fields, models, _
 from odoo.addons.base.models.decimal_precision import DecimalPrecision
 from odoo.exceptions import RedirectWarning, UserError, ValidationError, AccessError
