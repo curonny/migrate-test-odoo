@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account
-# 
+#
 # Translators:
 # Jan Dziurz <jan.dziurzynski@openglobe.pl>, 2020
 # Mikołaj Dziurzyński <mikolaj.dziurzynski@openglobe.pl>, 2020
@@ -44,7 +44,7 @@
 # Samuek Kobylarz, 2023
 # Tadeusz Karpiński <tadeuszkarpinski@gmail.com>, 2023
 # Paweł Wodyński <pw@myodoo.pl>, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"

@@ -26,7 +26,7 @@
                         <t t-if="o.journal_id.bank_account_id"> -
                                                     <span t-field="o.journal_id.bank_account_id"/>
                                                 </t>
-                        <t t-if="o.journal_id.code"> -                                                
+                        <t t-if="o.journal_id.code"> -
                                                     <span t-field="o.journal_id.code"/>
                                                 </t>
                       </strong>
@@ -37,7 +37,7 @@
                   <div class="col-12">
                     <h5>
                       <strong>
-                        <t t-if="o.name"><span t-field="o.name"/> 
+                        <t t-if="o.name"><span t-field="o.name"/>
                                                 - </t>
                         <span t-field="o.date"/>
                       </strong>
