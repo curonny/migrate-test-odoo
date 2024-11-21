@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 import odoo.tools
 from odoo.addons.account.tests.common import AccountTestInvoicingCommon
 from odoo.tests import tagged
