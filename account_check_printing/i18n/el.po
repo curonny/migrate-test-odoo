@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account_check_printing
-#
+# 
 # Translators:
 # Martin Trigaux, 2020
 # Kostas Goutoudis <goutoudis@gmail.com>, 2020
 # George Tarasidis <george_tarasidis@yahoo.com>, 2020
 # Alexandros Kapetanios <alexandros@gnugr.org>, 2021
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~13.5\n"

@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account_edi_facturx
-#
+# 
 # Translators:
 # Martin Trigaux, 2020
 # JH CHOI <hwangtog@gmail.com>, 2020
 # Linkup <link-up@naver.com>, 2021
 # Sarah Park, 2023
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"

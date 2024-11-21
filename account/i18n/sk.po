@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account
-#
+# 
 # Translators:
 # Adam Levrinc <adam.levrinc@26house.com>, 2020
 # palica <pavol.cupka@gmail.com>, 2020
@@ -25,7 +25,7 @@
 # Filip Matúšek <filip.matusek@26house.com>, 2022
 # Viktor Dicer, 2022
 # Jaroslav Bosansky <jaro.bosansky@ekoenergo.sk>, 2022
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server 14.0\n"

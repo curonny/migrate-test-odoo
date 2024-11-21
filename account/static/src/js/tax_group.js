@@ -20,11 +20,11 @@ odoo.define('account.tax_group', function (require) {
         //--------------------------------------------------------------------------
 
         /**
-         * This method is called by "_setTaxGroups". It is
+         * This method is called by "_setTaxGroups". It is 
          * responsible for calculating taxes based on
          * tax groups and triggering an event to
          * notify the ORM of a change.
-         *
+         * 
          * @param {Id} taxGroupId
          * @param {Float} deltaAmount
          */
@@ -92,7 +92,7 @@ odoo.define('account.tax_group', function (require) {
          * is located is of the "in_invoice" or "in_refund" type.
          * This makes it possible to know if it is a purchase
          * document.
-         *
+         * 
          * @returns boolean (true if the invoice is a purchase document)
          */
         _isPurchaseDocument: function () {
@@ -100,16 +100,16 @@ odoo.define('account.tax_group', function (require) {
         },
 
         /**
-         * This method is part of the widget life cycle and allows you to render
+         * This method is part of the widget life cycle and allows you to render 
          * the widget.
-         *
+         * 
          * @private
-         * @override
+         * @override 
          */
         _render: function () {
             var self = this;
             // Display the pencil and allow the event to click and edit only on purchase that are not posted and in edit mode.
-            // since the field is readonly its mode will always be readonly. Therefore we have to use a trick by checking the
+            // since the field is readonly its mode will always be readonly. Therefore we have to use a trick by checking the 
             // formRenderer (the parent) and check if it is in edit in order to know the correct mode.
             var displayEditWidget = self._isPurchaseDocument() && this.record.data.state === 'draft' && this.getParent().mode === 'edit';
             this.$el.html($(QWeb.render('AccountTaxGroupTemplate', {
@@ -123,11 +123,11 @@ odoo.define('account.tax_group', function (require) {
         //--------------------------------------------------------------------------
 
         /**
-         * This method is called when the user is in edit mode and
-         * leaves the <input> field. Then, we execute the code that
+         * This method is called when the user is in edit mode and 
+         * leaves the <input> field. Then, we execute the code that 
          * modifies the information.
-         *
-         * @param {event} ev
+         * 
+         * @param {event} ev 
          */
         _onBlur: function (ev) {
             ev.preventDefault();
@@ -135,7 +135,7 @@ odoo.define('account.tax_group', function (require) {
             var newValue = $input.val();
             var currency = session.get_currency(this.record.data.currency_id.data.id);
             try {
-                newValue = fieldUtils.parse.float(newValue);    // Need a float for format the value.
+                newValue = fieldUtils.parse.float(newValue);    // Need a float for format the value.             
                 newValue = fieldUtils.format.float(newValue, null, {digits: currency.digits}); // return a string rounded to currency precision
                 newValue = fieldUtils.parse.float(newValue); // convert back to Float to compare with oldValue to know if value has changed
             } catch (err) {
@@ -153,8 +153,8 @@ odoo.define('account.tax_group', function (require) {
         /**
          * This method is called when the user clicks on a specific <td>.
          * it will hide the edit button and display the field to be edited.
-         *
-         * @param {event} ev
+         * 
+         * @param {event} ev 
          */
         _onClick: function (ev) {
             ev.preventDefault();
@@ -170,11 +170,11 @@ odoo.define('account.tax_group', function (require) {
         },
 
         /**
-         * This method is called when the user is in edit mode and pressing
-         * a key on his keyboard. If this key corresponds to ENTER or TAB,
+         * This method is called when the user is in edit mode and pressing 
+         * a key on his keyboard. If this key corresponds to ENTER or TAB, 
          * the code that modifies the information is executed.
-         *
-         * @param {event} ev
+         * 
+         * @param {event} ev 
          */
         _onKeydown: function (ev) {
             switch (ev.which) {

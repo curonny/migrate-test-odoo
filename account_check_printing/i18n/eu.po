@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account_check_printing
-#
+# 
 # Translators:
 # Martin Trigaux, 2021
 # Esther Martín Menéndez <esthermartin001@gmail.com>, 2021
@@ -12,7 +12,7 @@
 # Iñaki Ibarrola <inakiibarrola@yahoo.es>, 2021
 # Victor Laskurain <blaskurain@binovo.es>, 2021
 # Maialen Rodriguez <maialenrodriguez98@gmail.com>, 2021
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~13.5\n"

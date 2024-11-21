@@ -1,13 +1,13 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account_lock
-#
+# 
 # Translators:
 # Nancy Momoland <thanh.np2502@gmail.com>, 2020
 # Duy BQ <duybq86@gmail.com>, 2020
 # Trần Hà <tranthuha13590@gmail.com>, 2021
 # Thi Huong Nguyen, 2023
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~13.5\n"

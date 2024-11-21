@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account_debit_note
-#
+# 
 # Translators:
 # Eino Mäkitalo <eino.makitalo@netitbe.fi>, 2020
 # Tommi Rintala <tommi.rintala@gmail.com>, 2020
@@ -11,7 +11,7 @@
 # Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2020
 # Pekka Ikonen, 2021
 # Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2023
-#
+# 
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~13.5\n"
