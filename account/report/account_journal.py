@@ -1,3 +1,5 @@
+# -*- coding: utf-8 -*-
+
 import time
 from odoo import api, models, _
 from odoo.exceptions import UserError

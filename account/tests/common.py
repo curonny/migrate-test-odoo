@@ -1,6 +1,7 @@
+# -*- coding: utf-8 -*-
 # Part of Odoo. See LICENSE file for full copyright and licensing details.
 from odoo import fields
-from odoo.tests.common import TransactionCase, HttpTransactionCase, tagged, Form
+from odoo.tests.common import SavepointCase, HttpSavepointCase, tagged, Form
 
 import time
 import base64
@@ -8,7 +9,7 @@ from lxml import etree
 
 
 @tagged("post_install", "-at_install")
-class AccountTestInvoicingCommon(TransactionCase):
+class AccountTestInvoicingCommon(SavepointCase):
     @classmethod
     def copy_account(cls, account):
         suffix_nb = 1
@@ -732,7 +733,7 @@ class AccountTestInvoicingCommon(TransactionCase):
 
 
 @tagged("post_install", "-at_install")
-class AccountTestInvoicingHttpCommon(AccountTestInvoicingCommon, HttpTransactionCase):
+class AccountTestInvoicingHttpCommon(AccountTestInvoicingCommon, HttpSavepointCase):
     pass
 
 
