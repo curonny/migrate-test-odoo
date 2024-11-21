@@ -1,4 +1,3 @@
-# -*- coding: utf-8 -*-
 
 from . import account_edi_common
 from . import account_edi_format
