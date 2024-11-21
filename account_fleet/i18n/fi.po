@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # 	* account_fleet
-# 
+#
 # Translators:
 # Eino Mäkitalo <eino.makitalo@netitbe.fi>, 2020
 # Kari Lindgren <kari.lindgren@emsystems.fi>, 2020
@@ -9,7 +9,7 @@
 # Tuomo Aura <tuomo.aura@web-veistamo.fi>, 2020
 # Jarmo Kortetjärvi <jarmo.kortetjarvi@gmail.com>, 2023
 # Ossi Mantylahti <ossi.mantylahti@obs-solutions.fi>, 2023
-# 
+#
 msgid ""
 msgstr ""
 "Project-Id-Version: Odoo Server saas~13.5\n"

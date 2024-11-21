@@ -1,7 +1,7 @@
 # Translation of Odoo Server.
 # This file contains the translation of the following modules:
 # * account_check_printing
-# 
+#
 # Translators:
 # Martin Trigaux, 2018
 # Turkesh Patel <turkesh4friends@gmail.com>, 2018
