@@ -1,4 +1,3 @@
-
 from . import sequence_mixin
 from . import partner
 from . import res_partner_bank

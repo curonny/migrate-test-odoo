@@ -1,4 +1,3 @@
-
 from odoo import models, fields, api
 
 from functools import lru_cache
