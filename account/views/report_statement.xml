@@ -1,3 +1,4 @@
+<?xml version='1.0' encoding='UTF-8'?>
 <odoo>
   <data>
     <template id="report_statement">
@@ -37,7 +38,8 @@
                   <div class="col-12">
                     <h5>
                       <strong>
-                        <t t-if="o.name"><span t-field="o.name"/>
+                        <t t-if="o.name">
+                          <span t-field="o.name"/>
                                                 - </t>
                         <span t-field="o.date"/>
                       </strong>

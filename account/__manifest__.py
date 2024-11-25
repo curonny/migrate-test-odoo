@@ -12,9 +12,15 @@
         "images/cash_register.jpeg",
         "images/chart_of_accounts.jpeg",
         "images/customer_invoice.jpeg",
-        "images/journal_entries.jpeg",
+        "images/journal_entries.jpeg"
     ],
-    "depends": ["base_setup", "product", "analytic", "portal", "digest"],
+    "depends": [
+        "base_setup",
+        "product",
+        "analytic",
+        "portal",
+        "digest"
+    ],
     "data": [
         "security/account_security.xml",
         "security/ir.model.access.csv",
@@ -74,9 +80,11 @@
         "views/res_currency.xml",
         "views/account_menuitem.xml",
         "views/account_analytic_default_view.xml",
-        "wizard/account_tour_upload_bill.xml",
+        "wizard/account_tour_upload_bill.xml"
     ],
-    "demo": ["demo/account_demo.xml"],
+    "demo": [
+        "demo/account_demo.xml"
+    ],
     "installable": True,
     "application": True,
     "auto_install": False,
@@ -102,12 +110,14 @@
             "/account/static/src/js/section_and_note_fields_backend.js",
             "/account/static/src/js/tours/account.js",
             "/account/static/src/js/bills_tree_upload.js",
-            "/account/static/src/js/account_selection.js",
+            "/account/static/src/js/account_selection.js"
         ],
-        "web.assets_frontend": ["/account/static/src/js/account_portal_sidebar.js"],
+        "web.assets_frontend": [
+            "/account/static/src/js/account_portal_sidebar.js"
+        ],
         "web.assets_tests": [
             "/account/static/tests/tours/account_dashboard_setup_bar_tests.js",
-            "/account/static/tests/tours/tax_group_tests.js",
+            "/account/static/tests/tours/tax_group_tests.js"
         ],
         "web.assets_qweb": [
             "static/src/xml/account_payment.xml",
@@ -116,7 +126,7 @@
             "static/src/xml/bills_tree_upload_views.xml",
             "static/src/xml/account_journal_activity.xml",
             "static/src/xml/grouped_view_widget.xml",
-            "static/src/xml/tax_group.xml",
-        ],
-    },
+            "static/src/xml/tax_group.xml"
+        ]
+    }
 }
